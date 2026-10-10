@@ -59,16 +59,23 @@ git clone https://github.com/OceanRay1/Yield-Guard.git
 cd Yield-Guard/recession_model
 ```
 
-### 2. Configure & Run Backend
+### 2. Configure Environment Variables
 ```bash
 cd backend
+cp .env.example .env
+FRED_API_KEY=your_actual_api_key_here
+```
+
+### 3. Configure & Run Backend
+``` bash
+cd recession_model/backend
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-### 3. Configure & Run Frontend
+### 4. Configure & Run Frontend
 Open a new terminal window:
 ```bash
 cd recession_model/frontend
