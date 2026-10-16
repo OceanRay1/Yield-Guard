@@ -12,6 +12,13 @@ The traditional yield curve model (10Y–3M Treasury spread) catches recessions,
 * **0.821 PR-AUC** across active economic regime validation periods
 * **Full Model Metrics:** https://yieldshield.pages.dev/model-trust
 
+## Development History & Repository Reset
+> **Note on Commit History:** This repository was reset on **September 23, 2026** to remove a hardcoded FRED API key before transitioning the repository to public visibility
+* **Project Started:** July 2026  
+* **Production Pipeline Completed:** October 2026  
+
+The current commit history only shows slight project modifications after deployment
+
 ## Tech Stack
 
 **Core Language:** Python 3.12, TypeScript, JavaScript
@@ -26,6 +33,7 @@ The traditional yield curve model (10Y–3M Treasury spread) catches recessions,
 Yield-Guard-main/
 ├── recession_model/
 │   ├── backend/
+│   │   ├── .env.example                     # Where the FRED API key is placed
 │   │   ├── main.py                          # FastAPI application entry point & routing
 │   │   ├── model_data.py                    # Data ingestion and cleaning pipelines
 │   │   ├── model_diag.py                    # Model evaluation & performance diagnostics
